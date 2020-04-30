@@ -1,5 +1,8 @@
+/******************************************
+              HELPERS RULES
+******************************************/
 * {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .pv-8 {
   padding-top: 8px;
@@ -62,6 +65,44 @@
 .width-auto {
   width: auto !important;
 }
+.radius-2 {
+  border-radius: 2rem;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid rgba(211, 211, 211, .5) !important;
+}
+.border-top-grey {
+  border-top: 1px solid rgba(211, 211, 211, .5) !important;
+}
+.border-green {
+  border: 1px solid #8BC540;
+}
+.no-border {
+  border: none !important;
+}
+.overflow-hiddem {
+  overflow: hidden;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.no-underline:hover {
+  text-decoration: none !important;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+/******************************************
+              PANIER THEME 1
+******************************************/
+
 .header-link {
   text-decoration: none !important; 
 }
@@ -81,9 +122,6 @@
 }
 .dropdown-menu__image.show {
   display: flex;
-}
-.radius-2 {
-  border-radius: 2rem;
 }
 .header-search__block {
   position: relative;
@@ -121,41 +159,11 @@
 .table td {
   border-top: none;
 }
-.border-bottom-grey {
-  border-bottom: 1px solid rgba(211, 211, 211, .5) !important;
-}
-.border-top-grey {
-  border-top: 1px solid rgba(211, 211, 211, .5) !important;
-}
-.border-green {
-  border: 1px solid #8BC540;
-}
-.no-border {
-  border: none !important;
-}
 .card__highlight {
   min-width: 145px;
 }
-.overflow-hiddem {
-  overflow: hidden;
-}
 .input-group .form-control {
   max-width: 60px;
-}
-.no-underline {
-  text-decoration: none !important;
-}
-.no-underline:hover {
-  text-decoration: none !important;
-}
-.fw-300 {
-  font-weight: 300;
-}
-.fs-14 {
-  font-size: 14px;
-}
-.fs-12 {
-  font-size: 12px;
 }
 .condition-block a {
   font-style: 18px;
@@ -169,9 +177,12 @@
 .condition-block a:last-child {
   text-decoration: none;
 }
-
 .icon {
   display: inline-block;
   height: 24px;
   width: 24px;
 }
+
+/******************************************
+              PANIER THEME 1
+******************************************/
