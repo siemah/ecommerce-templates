@@ -16,6 +16,65 @@
 
 <body>
 
+  <nav class="mobile-nav sidebar-nav">
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="search-form__mobile">
+      <div class="input-group radius-2 overflow-hidden">
+        <input type="text" class="form-control no-border color-light-black text-center" placeholder="Search product" aria-label="searhc">
+        <div class="input-group-append border-green">
+          <button class="input-group-text bg-transparent color-green no-border"></button>
+        </div>
+      </div>
+    </div>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- Main block of all components -->
   <main class="main-container">
 
@@ -39,7 +98,7 @@
         <nav class="container navbar navbar-expand-lg navbar-light pr-0 pl-0">
           <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
             <div class="logo-container">
-              <button class="navbar-toggler no-border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler no-border pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="/">
@@ -171,7 +230,7 @@
 
     </header>
 
-    <div class="jumbotron jumbotron-fluid p-0 m-0 hero-image"></div>
+    <div class="jumbotron jumbotron-fluid p-0 m-0 hero-image bg-grey"></div>
 
     <div class="container">
 
@@ -183,9 +242,9 @@
         </ol>
       </nav>
 
-      <div class="row pt-5 pb-5 panier__product-list">
+      <div class="row pt-lg-5 pb-5 panier__product-list">
 
-        <div class="col-lg-9 pr-2">
+        <div class="col-lg-9 pr-lg-2">
           <table class="table">
             <thead>
               <tr class="border-bottom-grey">
@@ -198,12 +257,12 @@
             </thead>
             <tbody>
               <tr class="border-bottom-grey">
-                <td class="align-middle pt-4 pb-4" scope="row">
+                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2" scope="row">
                   <img src="../assets/images/panier-product.png" alt="product" />
                   <span class="panier__product-item">Product title</span>
                 </td>
-                <td class="align-middle pt-4 pb-4">DA 150000,00</td>
-                <td class="align-middle pt-4 pb-4">
+                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
+                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
                   <div class="input-group mb-3 mt-2 justify-content-between border-green radius-2 overflow-hidden">
                     <div class="input-group-prepend">
                       <button class="input-group-text bg-transparent color-green no-border">-</button>
@@ -215,8 +274,8 @@
                     </div>
                   </div>
                 </td>
-                <td class="align-middle pt-4 pb-4">DA 150000,00</td>
-                <td class="align-middle pt-4 pb-4">
+                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
+                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
                   <button class="bg-transparent no-border">&times;</button>
                 </td>
               </tr>
@@ -247,7 +306,7 @@
           </table>
         </div>
 
-        <div class="col-lg-3 pl-2 mt-3">
+        <div class="col-lg-3 pl-lg-2 mt-3">
           <div class="card bg-grey pt-4 pb-4 p-3 overflow-hidden">
 
             <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
@@ -305,7 +364,7 @@
             <div class="mr-2"><a href="" class="icon"><img src="../assets/images/icons/twitter-grey.svg" alt=""></a>
             </div>
           </div>
-          <div class="center d-flex">
+          <div class="nav-menu__center d-flex">
             <a class="nav-item nav-link color-light-black" href="#">Home</a>
             <a class="nav-item nav-link color-light-black" href="#">Shop</a>
             <a class="nav-item nav-link color-light-black" href="#">Product</a>

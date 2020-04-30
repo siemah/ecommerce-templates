@@ -1,10 +1,28 @@
 @media only screen and (max-width: 991px) {
- .search-block,
- .header-navbar__bottom {
-   visibility: hidden;
-   display: none;
- }
- .search-block + ul {
-   flex-direction: row;
- }
+  .header-top,
+  .search-block,
+  .header-navbar__bottom {
+    visibility: hidden;
+    display: none;
+  }
+  .search-block + ul {
+    flex-direction: row;
+  }
+  .hero-image {
+    height: 150px;
+  }
 }
+
+@media only screen and (max-width: 791px) {
+  .table thead,
+  .main-footer .nav-menu__center {
+    display: none !important;
+  }
+  .table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
