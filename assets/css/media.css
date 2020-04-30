@@ -1,0 +1,10 @@
+@media only screen and (max-width: 991px) {
+ .search-block,
+ .header-navbar__bottom {
+   visibility: hidden;
+   display: none;
+ }
+ .search-block + ul {
+   flex-direction: row;
+ }
+}

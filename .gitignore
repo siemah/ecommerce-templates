@@ -1,0 +1,6 @@
+# file
+.DS_Store
+yarn.*
+
+# folders
+node_modules/
