@@ -26,6 +26,9 @@
 .bg-dark {
   background-color: #333333;
 }
+.bg-black-2 {
+  color: #595959 !important;;
+}
 .bg-grey {
   background-color: #EBEBEB;
 }
@@ -68,6 +71,9 @@
 .width-auto {
   width: auto !important;
 }
+.radius-1 {
+  border-radius: 1rem;
+}
 .radius-2 {
   border-radius: 2rem;
 }
@@ -95,8 +101,17 @@
 .no-underline:hover {
   text-decoration: none !important;
 }
+.no-resize {
+  resize: none;
+}
 .fw-300 {
   font-weight: 300;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-16 {
+  font-size: 16px;
 }
 .fs-14 {
   font-size: 14px;
@@ -241,5 +256,12 @@ td .quantity-container {
 }
 
 /******************************************
-              PANIER THEME 1
+              MAP
 ******************************************/
+#map {
+  height: 185px;
+  width: 100%;
+}
+.map-container {
+  margin-top: 2.75rem;
+}
