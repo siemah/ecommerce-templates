@@ -17,67 +17,96 @@
 
 <body>
 
-  <nav class="mobile-nav sidebar-nav">
-    <button type="button" class="close" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
+  <nav class="mobile-menu__container bg-dark sidebar-nav show p-3 js-mobile__menu">
+    <div class="mobile-menu__block">
+      <button type="button" class="close p-2 fw-300 js-mobile__menu-closer" aria-label="Close">
+        <span aria-hidden="true" class="color-white">&times;</span>
+      </button>
+    </div>
     <div class="search-form__mobile">
-      <div class="input-group radius-2 overflow-hidden">
-        <input type="text" class="form-control no-border color-light-black text-center" placeholder="Search product" aria-label="searhc">
-        <div class="input-group-append border-green">
-          <button class="input-group-text bg-transparent color-green no-border"></button>
+      <form action="/search" class="input-group mb-3">
+        <input type="text" class="form-control bg-dark color-white rounded-0" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="input-group-text bg-green rounded-0 border-green">
+            <img src="../assets/images/icons/search.png" alt="search">
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="accordion">
+      <div class="card accordion-item no-border">
+        <div class="card-header pl-0 pr-0 pt-0 pb-0" id="headingOne">
+          <h5 class="mb-0 border-bottom-grey fw-300">
+            <button class="accordion-item__toggler btn text-left pl-0 pr-0 color-white text-uppercase btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Home
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body pl-0 pr-0 pt-1 pb-0 border-bottom-grey">
+            <ul class="pl-0 pr-0">
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">01-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">02-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">03-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">04-Link</a></li>
+            </ul>  
+          </div>
+        </div>
+      </div>
+      <div class="card accordion-item no-border">
+        <div class="card-header pl-0 pr-0 pt-0 pb-0" id="headingOne">
+          <h5 class="mb-0 border-bottom-grey fw-300">
+            <button class="accordion-item__toggler btn text-left pl-0 pr-0 color-white text-uppercase btn-block" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+              sHop
+            </button>
+          </h5>
+        </div>
+        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+          <div class="card-body pl-0 pr-0 pt-1 pb-0 border-bottom-grey">
+            <ul class="pl-0 pr-0">
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">01-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">02-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">03-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">04-Link</a></li>
+            </ul>  
+          </div>
+        </div>
+      </div>
+      <div class="card accordion-item no-border">
+        <div class="card-header pl-0 pr-0 pt-0 pb-0" id="headingOne">
+          <h5 class="mb-0 border-bottom-grey fw-300">
+            <button class="accordion-item__toggler btn text-left pl-0 pr-0 color-white text-uppercase btn-block" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+              Product
+            </button>
+          </h5>
+        </div>
+        <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body pl-0 pr-0 pt-1 pb-0 border-bottom-grey">
+            <ul class="pl-0 pr-0">
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">01-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">02-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">03-Link</a></li>
+              <li class="text-left pb-1 fw-300 pt-1 accordion__list-item"><a href="/">04-Link</a></li>
+            </ul>  
+          </div>
         </div>
       </div>
     </div>
-    <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Collapsible Group Item #1
-            </button>
-          </h5>
-        </div>
-    
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
+    <div class="social-media d-flex pt-2 justify-content-center">
+      <div class="mr-2"><a href="" class="icon"><img src="../assets/images/icons/facebook-green.svg" alt=""></a>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Collapsible Group Item #2
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
+      <div class="mr-2"><a href="" class="icon"><img src="../assets/images/icons/youtube-grey.svg" alt=""></a>
       </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Collapsible Group Item #3
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
+      <div class="mr-2"><a href="" class="icon"><img src="../assets/images/icons/instagram-grey.svg" alt=""></a>
+      </div>
+      <div class="mr-2"><a href="" class="icon"><img src="../assets/images/icons/twitter-grey.svg" alt=""></a>
       </div>
     </div>
   </nav>
+  <div class="mobile-menu__overlay js-mobile__overlay bg-lightgrey"></div>
 
   <!-- Main block of all components -->
-  <main class="main-container">
+  <main class="main-container js-main__container">
 
     <!-- header nav -->
     <header class="main-header">
@@ -102,7 +131,7 @@
         <nav class="container navbar navbar-expand-lg navbar-light pr-0 pl-0">
           <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
             <div class="logo-container">
-              <button class="navbar-toggler no-border pl-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler no-border pl-0 js-mobile__menu-trigger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="/">
@@ -157,7 +186,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu__image mt-0 pt-0 pb-0 no-border rounded-0" aria-labelledby="dropdownMenuLink">
                   <div class="pl-2">
-                    <span class="dropdown-item fw-300 color-light-black p-14 pt-2 pb-2 text-capitalize" href="#">Product Detail</span>
+                    <span class="dropdown-item fw-300 color-light-black p-14 pt-2 pb-2 text-uppercase" href="#">Product Detail</span>
                     <a class="dropdown-item fw-300 color-light-black p-14 pt-2 pb-2" href="#">Get idea</a>
                     <a class="dropdown-item fw-300 color-light-black p-14 pt-2 pb-2" href="#">Product</a>
                     <a class="dropdown-item fw-300 color-light-black p-14 pt-2 pb-2" href="#">Things</a>
@@ -405,6 +434,32 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+  <!-- custom js to open mobile menu -->
+  <script type="text/javascript">
+    var _overlay         = $('.js-mobile__overlay');
+    var _openBtn         = $('.js-mobile__menu-trigger');
+    var _closeBtn        = $('.js-mobile__menu-closer');
+    var _mobileMenu      = $('.js-mobile__menu');
+    var _mainContainer   = $('.js-main__container');
+    // close menu
+    function closeMenu(e) {
+      e.preventDefault();
+      _mobileMenu.removeClass('show');
+      $('body').removeClass('overflow-hidden');
+      _mainContainer.removeClass('translateX');
+    }
+    _openBtn.click(function (e) {
+      e.preventDefault();
+      _mobileMenu.addClass('show');
+      $('body').addClass('overflow-hidden');
+      _mainContainer.addClass('translateX');
+    });
+    _closeBtn.click(closeMenu);
+    _overlay.click(closeMenu)
+
+  </script>
+  
 </body>
 
 </html>

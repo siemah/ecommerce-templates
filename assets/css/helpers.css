@@ -23,6 +23,9 @@
 .p-14 {
   padding: 14px;
 }
+.bg-dark {
+  background-color: #333333;
+}
 .bg-grey {
   background-color: #EBEBEB;
 }
@@ -162,7 +165,7 @@
 .card__highlight {
   min-width: 145px;
 }
-.input-group .form-control {
+td .input-group .form-control {
   max-width: 60px;
 }
 .condition-block a {
@@ -181,6 +184,57 @@
   display: inline-block;
   height: 24px;
   width: 24px;
+}
+.translateX {
+  transform: translateX(180px);
+  transition: transform .3s;
+}
+/*********************************
+        MOBILE MENU
+**********************************/
+.mobile-menu__container,
+.mobile-menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 280px;
+  z-index: 2;
+  transform: translateX(-300px);
+  transition: transform .3s;
+}
+.mobile-menu__overlay {
+  right: 0;
+  z-index: 1;
+  max-width: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(0px)
+}
+.mobile-menu__container.show {
+  transform: translateX(0px);
+  overflow: scroll;
+}
+.mobile-menu__container.show + .mobile-menu__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.accordion-item {
+  background-color: transparent;
+}
+.accordion__list-item {
+  list-style: none;
+}
+.accordion__list-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.accordion-item__toggler:hover,
+.accordion-item__toggler:focus,
+.accordion-item__toggler:active,
+.accordion__list-item a:hover {
+  color: #8BC540;
 }
 
 /******************************************
