@@ -1,6 +1,7 @@
 # file
 .DS_Store
 yarn.*
+.todo
 
 # folders
 node_modules/
