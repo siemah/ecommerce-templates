@@ -50,6 +50,12 @@
 .color-green_hover:hover {
   color: #8BC540;
 }
+.color-grey {
+  color: #BCBCBC !important;
+}
+.color-grey::before {
+  color: #BCBCBC !important;
+}
 .color-white {
   color: #ffffff;
 }
@@ -95,6 +101,9 @@
 .overflow-hiddem {
   overflow: hidden;
 }
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
 .no-underline {
   text-decoration: none !important;
 }
@@ -119,6 +128,32 @@
 .fs-12 {
   font-size: 12px;
 }
+.relative {
+  position: relative;
+}
+.header-item__badge {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  font-size: 12px;
+  font-weight: 300;
+  /* left: 50%; */
+  /* transform: translateX(-60%); */
+  width: 15px;
+  height: 15px;
+  line-height: 70%;
+  text-transform: center;
+}
+
+/******************************************
+          CSS theme
+******************************************/
+.table-theme_black * {
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+
 
 /******************************************
               PANIER THEME 1
@@ -175,7 +210,7 @@
 }
 .panier__product-list,
 .table td {
-  color: #595959 !important;
+  color: #595959;
 }
 .table td {
   border-top: none;
@@ -185,6 +220,8 @@
 }
 td .quantity-container {
   max-width: 130px;
+  border-width: 1px;
+  border-style: solid;
 }
 .condition-block a {
   font-style: 18px;
@@ -221,6 +258,7 @@ td .quantity-container {
   z-index: 2;
   transform: translateX(-300px);
   transition: transform .3s;
+  visibility: hidden;
 }
 .mobile-menu__overlay {
   right: 0;
@@ -233,6 +271,7 @@ td .quantity-container {
 .mobile-menu__container.show {
   transform: translateX(0px);
   overflow: scroll;
+  visibility: visible;
 }
 .mobile-menu__container.show + .mobile-menu__overlay {
   opacity: 1;
@@ -267,4 +306,11 @@ td .quantity-container {
 }
 .map-extend-height {
   height: 400px !important;
+}
+
+/************************
+      PANIER THEME 3
+************************/
+.table td {
+  margin-top: ;
 }
