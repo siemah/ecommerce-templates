@@ -165,8 +165,8 @@
 .card__highlight {
   min-width: 145px;
 }
-td .input-group .form-control {
-  max-width: 60px;
+td .quantity-container {
+  max-width: 130px;
 }
 .condition-block a {
   font-style: 18px;
