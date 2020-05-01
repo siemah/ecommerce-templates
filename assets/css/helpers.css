@@ -265,3 +265,6 @@ td .quantity-container {
 .map-container {
   margin-top: 2.75rem;
 }
+.map-extend-height {
+  height: 400px !important;
+}
