@@ -137,13 +137,17 @@
 .fs-12 {
   font-size: 12px;
 }
+.fs-11 {
+  font-size: 11px;
+}
 .relative {
   position: relative;
 }
 .width-100 {
   width: 100%;
 }
-.header-item__badge {
+.header-item__badge,
+.header-item__badge_text {
   position: absolute;
   top: 10px;
   left: 6px;
@@ -155,6 +159,9 @@
   height: 15px;
   line-height: 70%;
   text-transform: center;
+}
+.header-item__badge_text {
+  left: 12px;
 }
 /******************************************
           CSS theme
