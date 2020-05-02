@@ -29,6 +29,9 @@
 .bg-black-2 {
   color: #595959 !important;;
 }
+.bg-light-blue {
+  background-color: #9EB7CD !important;
+}
 .bg-grey {
   background-color: #EBEBEB;
 }
@@ -130,6 +133,9 @@
 }
 .relative {
   position: relative;
+}
+.width-100 {
+  width: 100%;
 }
 .header-item__badge {
   position: absolute;
@@ -306,11 +312,4 @@ td .quantity-container {
 }
 .map-extend-height {
   height: 400px !important;
-}
-
-/************************
-      PANIER THEME 3
-************************/
-.table td {
-  margin-top: ;
 }
