@@ -18,7 +18,7 @@
   padding-left: 14px;
 }
 .mr-14 {
-  padding-right: 14px;
+  margin-right: 14px;
 }
 .p-14 {
   padding: 14px;
@@ -249,10 +249,18 @@ td .quantity-container {
 .condition-block a:last-child {
   text-decoration: none;
 }
-.icon {
-  display: inline-block;
+.icon svg {
   height: 24px;
   width: 24px;
+}
+.icon.icon_theme_black svg path {
+  fill: #000000;
+}
+.icon.icon_theme_grey svg path {
+  fill: #BCBCBC;
+}
+.icon.icon_theme_white svg path {
+  fill: #ffffff;
 }
 .translateX {
   transform: translateX(180px);
