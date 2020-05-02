@@ -32,6 +32,9 @@
 .bg-light-blue {
   background-color: #9EB7CD !important;
 }
+.bg-dark-blue {
+  background-color: #122C49;
+}
 .bg-grey {
   background-color: #EBEBEB;
 }
@@ -153,7 +156,6 @@
   line-height: 70%;
   text-transform: center;
 }
-
 /******************************************
           CSS theme
 ******************************************/
@@ -181,7 +183,10 @@
 .navbar-brand.dropdown-toggle::after {
   color: #ffffff;
 }
-.dropdown-item:hover {
+
+.dropdown-item:hover,
+.header-navbar__bottom .nav-link:hover,
+.header-navbar__bottom .nav-link:hover  .nav-link__text {
   background-color: #ffffff !important;
   color: #8BC540 !important;
 }
