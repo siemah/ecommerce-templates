@@ -13,9 +13,6 @@
   <link rel="stylesheet" href="../assets/css/media.css" />
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- owl css for carousel -->
-  <link rel="stylesheet" href="../assets/css/owl.min.css">
-  <link rel="stylesheet" href="../assets/css/owl.default.min.css">
 
   <title>Product Theme 1</title>
 </head>
@@ -395,7 +392,10 @@
 
           <div class="d-flex justify-content-between flex-column flex-sm-row">
             <div class="product-thumbnails__block d-flex flex-row flex-sm-column mr-1">
-              <button data-slide="0"
+              <!-- data-slide attribute allow to target the slide to jump to when click event triggered from that element -->
+              <!-- so each slide has order from 0 to number of slides minus 1, accept number only-->
+              <button 
+                data-slide="0" 
                 class="product-thumbnails__item mr-1 mr-sm-0 btn no-border rounded-0 bg-grey width-95px height-95px p-0 mb-3 js-carousel__dot">
                 <img src="../assets/images/product.png" class="img-fluid" alt="product title">
               </button>
@@ -579,8 +579,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <!-- owl carousel js-->
-  <script src="../assets/js/owl.min.js"></script>
 
   <!-- custom js to open mobile menu -->
   <script type="text/javascript">
