@@ -50,4 +50,8 @@
   .product__hero_bottom {
     background-image: none;
   }
+  .pv-34 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }

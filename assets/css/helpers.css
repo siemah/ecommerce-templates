@@ -162,6 +162,9 @@
 .max-width-110px {
   max-width: 110px !important;
 }
+.min-width-110px {
+  min-width: 110px !important;
+}
 .width-95px {
   width: 95px;
 }
@@ -360,7 +363,8 @@ td .quantity-container {
 .map-container {
   margin-top: 2.75rem;
 }
-.map-extend-height {
+.map-extend-height,
+.height-400px {
   height: 400px !important;
 }
 
@@ -432,4 +436,18 @@ input {
 
 .flex-1 {
   flex: 1;
+}
+/****************************************
+          PRODUCTS THEME 3
+****************************************/
+.product-image__navigation-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 35px;
+}
+.owl-next.product-image__navigation-item {
+  left: auto;
+  right: 0;
 }
