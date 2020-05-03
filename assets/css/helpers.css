@@ -18,11 +18,20 @@
 .mr-8 {
   margin-right: 8px !important;
 }
+.mr-10 {
+  margin-right: 10px !important;
+}
 .ml-14 {
   padding-left: 14px;
 }
 .mr-14 {
   margin-right: 14px;
+}
+.mb-30px {
+  margin-bottom: 30px;
+}
+.mb-40px {
+  margin-bottom: 40px;
 }
 .p-14 {
   padding: 14px;
@@ -47,6 +56,9 @@
 }
 .bg-green {
   background-color: #8BC540;
+}
+.bg-light {
+  background-color: #F7F7F7 !important;
 }
 .bg-white {
   background-color: #ffffff !important;
@@ -84,11 +96,17 @@
 .color-light-black {
   color: #686868 !important;
 }
+.color-darkgrey {
+  color: #838383 !important;
+}
 .color-black-2 {
   color: #595959 !important;;
 }
 .width-auto {
   width: auto !important;
+}
+.radius-0-5 {
+  border-radius: .5rem;
 }
 .radius-1 {
   border-radius: 1rem;
@@ -193,6 +211,10 @@
 }
 .header-item__badge_text {
   left: 12px;
+}
+/* add space between icons of panier and favoris */
+header > div.container > nav.container.navbar.navbar-expand-lg.navbar-light.pr-0.pl-0 > div > ul > li:nth-child(1) > a {
+  margin-right: 30px;
 }
 /******************************************
           CSS theme
@@ -375,6 +397,7 @@ td .quantity-container {
   background-image: url(../images/product-bottom-hero.png);
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: 100%;
 }
 .radio-button {
   cursor: pointer;
@@ -450,4 +473,53 @@ input {
 .owl-next.product-image__navigation-item {
   left: auto;
   right: 0;
+}
+
+/**********************************
+          SHOP THEME 1
+***********************************/
+.shop__hero_top {
+  background-image: url(../images/shop-top-hero.png);
+  background-repeat: no-repeat;
+  background-position: right 40%;
+  background-size: 80%;
+}
+.fillters-container .custom-checkbox .custom-control-label::before {
+  background-color: #F7F7F7;
+  border-color: #E4E4E4;
+}
+.fillters-container .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #8BC540;
+  border-color: #8BC540;
+}
+
+.card-product {
+  background-color: #ffffff;
+}
+.card-product .card-body {
+  max-height: 55px;
+}
+.card-product .card-body .card-body__wrapper {
+  transition: transform .3s;
+}
+.card-product:hover .card-body .card-body__wrapper {
+  transform: translateY(-150px);
+}
+.custom-pagination.pagination li.page-item a.page-link,
+.custom-pagination.pagination .page-item.active .page-link {
+  border-radius: .25rem;
+  height: 32px;
+  width: 32px;
+  color: #8BC540;
+}
+.custom-pagination.pagination .page-link:hover,
+.custom-pagination.pagination .page-item.active .page-link {
+  border-color: #8BC540;
+  background-color: #8BC540;
+  color: #ffffff !important;
+}
+.custom-pagination.pagination li.page-item .page-dots {
+  border-width: 0;
+  background-color: transparent;
+  color: #8BC540;
 }

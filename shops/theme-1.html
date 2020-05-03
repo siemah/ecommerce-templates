@@ -11,8 +11,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/helpers.css" />
   <link rel="stylesheet" href="../assets/css/media.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
-  <title>Theme 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Shops Theme 1</title>
 </head>
 
 <body class="overflow-x-hidden">
@@ -376,126 +376,379 @@
 
     <div class="container">
       <!-- breadcrumb menu -->
-      <nav aria-label="breadcrumb p-1 ">
-        <ol class="breadcrumb mb-0 bg-white pt-4 pb-4 border-bottom-grey">
-          <li class="breadcrumb-item" aria-current="page"><a class="color-black" href="/home">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page"><a class="color-black" href="/shop">Shop</a></li>
-          <li class="breadcrumb-item" aria-current="page"><a class="color-black" href="/mon-panier">Mon Panier</a></li>
-        </ol>
-      </nav>
+      <div class="row col-sm-12 offset-lg-3 col-lg-9 pl-2">
+        <nav aria-label="breadcrumb p-1">
+          <ol class="breadcrumb mb-0 bg-white pt-4 pb-4 pl-2 pl-lg-0">
+            <li class="breadcrumb-item" aria-current="page"><a class="color-black" href="/home">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a class="color-black" href="/shop">Shop</a></li>
+          </ol>
+        </nav>
+      </div>
       <!-- end of breadcrumb menu -->
-      
-      <!-- product list  -->
-      <div class="row pt-lg-5 pb-5 panier__product-list">
 
-        <div class="col-lg-9 pr-lg-2">
-          <table class="table">
-            <thead>
-              <tr class="border-bottom-grey">
-                <td scope="col">Produit</td>
-                <td scope="col">Prix</td>
-                <td scope="col">Quantite</td>
-                <td scope="col">Total</td>
-                <td scope="col"></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-bottom-grey">
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2" scope="row">
-                  <img src="../assets/images/panier-product.png" alt="product" />
-                  <span class="panier__product-item">Product title</span>
-                </td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
-                  <div class="d-flex justify-content-lg-start justify-content-center">
-                    <div class="quantity-container input-group mb-3 mt-2 justify-content-between border-green radius-2 overflow-hidden">
-                      <div class="input-group-prepend">
-                        <button class="input-group-text bg-transparent color-green no-border">-</button>
-                      </div>
-                      <input type="text" class="form-control no-border color-green text-center" value="01"
-                        aria-label="Quantite">
-                      <div class="input-group-append">
-                        <button class="input-group-text bg-transparent color-green no-border">+</button>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
-                  <button class="bg-transparent no-border">&times;</button>
-                </td>
-              </tr>
-              <tr class="border-bottom-grey">
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2" scope="row">
-                  <img src="../assets/images/panier-product.png" alt="product" />
-                  <span class="panier__product-item">Product title</span>
-                </td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
-                  <div class="d-flex justify-content-lg-start justify-content-center">
-                    <div class="quantity-container input-group mb-3 mt-2 justify-content-between border-green radius-2 overflow-hidden">
-                      <div class="input-group-prepend">
-                        <button class="input-group-text bg-transparent color-green no-border">-</button>
-                      </div>
-                      <input type="text" class="form-control no-border color-green text-center" value="01"
-                        aria-label="Quantite">
-                      <div class="input-group-append">
-                        <button class="input-group-text bg-transparent color-green no-border">+</button>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">DA 150000,00</td>
-                <td class="align-middle pt-lg-4 pt-sm-2 pb-lg-4 pb-sm-2">
-                  <button class="bg-transparent no-border">&times;</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- shop container  -->
+      <div class="row shop__product-list">
 
-        <div class="col-lg-3 pl-lg-2 mt-3">
-          <div class="card bg-grey pt-4 pb-4 p-3 overflow-hidden">
-
-            <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
-              <div class="p-1 mr-2">Total HT</div>
-              <div class="card__highlight bg-lightgrey p-1 pl-3 pr-3 text-right radius-2 bg-grey">DA 150 000, 00</div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
-              <div class="p-1 mr-2">TVA 19%</div>
-              <div class="card__highlight bg-lightgrey p-1 pl-3 pr-3 text-right radius-2 bg-grey">DA 28 000, 00</div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
-              <div class="p-1 mr-2">Total TTC</div>
-              <div class="card__highlight bg-lightgrey p-1 pl-3 pr-3 text-right radius-2 bg-grey">DA 178 000, 00</div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
-              <div class="p-1 mr-2">Livraison</div>
-              <div class="card__highlight bg-lightgrey p-1 pl-3 pr-3 text-right radius-2 bg-grey">DA 500, 00</div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center card-item pt-2 pb-2 align-middle">
-              <div class="p-1 mr-2">Total</div>
-              <div class="card__highlight bg-white color-green p-1 pl-3 pr-3 text-right radius-2 bg-grey">DA 150 000,00
+        <!-- product and filters list  -->
+        <div class="col-sm-12 col-lg-3">
+          <div class="border-top-grey pt-4 pb-4">
+            <h3 class="fs-24 color-black mb-3 text-uppercase">COLLECTION</h3>
+            <div class="fillters-container">
+              <div class="d-flex align-items-center pt-1 pb-1 custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input color-black-2 text-capitalize flex-1 fs-14 mb-0 ml-3"
+                  id="customCheck1">
+                <label class="custom-control-label flex-1 color-black-2" for="customCheck1">Smarphones</label>
+                <span class="color-black-2 fs-14 color-black-2">02</span>
+              </div>
+              <div class="d-flex align-items-center pt-1 pb-1 custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input color-black-2 text-capitalize flex-1 fs-14 mb-0 ml-3"
+                  id="customCheck2">
+                <label class="custom-control-label flex-1 color-black-2" for="customCheck2">Headphones</label>
+                <span class="color-black-2 fs-14 color-black-2">15</span>
+              </div>
+              <div class="d-flex align-items-center pt-1 pb-1 custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input color-black-2 text-capitalize flex-1 fs-14 mb-0 ml-3"
+                  id="customCheck3">
+                <label class="custom-control-label flex-1 color-black-2" for="customCheck3">All In One</label>
+                <span class="color-black-2 fs-14 color-black-2">12</span>
+              </div>
+              <div class="d-flex align-items-center pt-1 pb-1 custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input color-black-2 text-capitalize flex-1 fs-14 mb-0 ml-3"
+                  id="customCheck4">
+                <label class="custom-control-label flex-1 color-black-2" for="customCheck4">Laptops</label>
+                <span class="color-black-2 fs-14 color-black-2">20</span>
               </div>
             </div>
-            <div class="div pt-2 pb-2">
-              <button class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</button>
+          </div>
+          <div class="border-top-grey pt-4 pb-4">
+            <h3 class="fs-24 color-black mb-3 text-uppercase">FILTERS</h3>
+            <div class="fillters-container">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fs-14 color-black-2">Colleurs</h4>
+                <div class="d-block border-green radius-2 min-width-110px height-36 overflow-hidden">
+                  <select class="form-control no-border bg-white d-block color-green d-block width-100">
+                    <option selected="">Red</option>
+                    <option>Green</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fs-14 color-black-2">Tailles</h4>
+                <div class="d-block border-green radius-2 min-width-110px height-36 overflow-hidden">
+                  <select class="form-control no-border bg-white d-block color-green d-block width-100">
+                    <option selected="">XXL</option>
+                    <option>XL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-top-grey pt-4">
+            <h3 class="fs-24 color-black mb-3 text-uppercase">Autre</h3>
+            <div class="fillters-container">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fs-14 color-black-2">Produits par page</h4>
+                <div class="d-block border-green radius-2 min-width-110px height-36 overflow-hidden">
+                  <select class="form-control no-border bg-white d-block color-green d-block width-100">
+                    <option selected="">06</option>
+                    <option>09</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- end of product list  -->
+
+        <!-- product list -->
+        <div class="col-sm-12 col-lg-9">
+          <!-- hero card image -->
+          <div class="bg-orange p-4 mb-30px shop__hero_top radius-0-5">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <h3 class="display-4 mb-30px color-black-2 fs-24">Display place holder</h3>
+              <p class="mb-4 fs-14">Lorem ipsum dolor sit amet, mel virtute feugiat an.</p>
+              <a href="/"
+                class="btn-link border-green radius-2 p-1 pl-5 pr-5 color-green color-green_hover no-underline fs-14">Button</a>
+            </div>
+          </div>
+          <!-- end of hero card image -->
+
+          <!-- products cards list -->
+          <div class="row mb-40px">
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-30px col-sm-6 col-lg-4 card card-product no-border radius-0-5 overflow-hidden">
+              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
+              <div class="card-body p-0">
+                <div class="card-body__wrapper p-3 bg-white radius-0-5">
+                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
+                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
+                  <div class="card-text">
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="pricing-container d-flex flex-column">
+                        <span class="color-black-2">
+                          <sup>DA</sup>150 000, 00
+                        </span>
+                        <span class="color-darkgrey fs-12">
+                          <del><sup>DA</sup>150 000, 00</del>
+                        </span>
+                      </div>
+                      <div class="">
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                          <span class="radio-button__control"
+                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #FC4850; border-color: #FC4850;"></span>
+                        </label>
+                        <label class="radio-button mb-0">
+                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                          <span class="radio-button__control"
+                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <a href="/product"
+                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of products cards list -->
+
+          <!-- pagination -->
+          <nav aria-label="row">
+            <ul class="pagination custom-pagination d-flex justify-content-end mb-40px">
+              <li class="page-item mr-10 active">
+                <span class="page-link border-green bg-green p-2 text-center">
+                  1
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item mr-10">
+                <a class="page-link border-green p-2 text-center" href="#">2</a>
+              </li>
+              <li class="page-item mr-10">
+                <a class="page-link border-green p-2 text-center" href="#">3</a>
+              </li>
+              <li class="page-item mr-10">
+                <span class="page-dots border-green p-2 text-center" href="#">...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link border-green p-2 text-center" href="#">4</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end of pagination -->
+
+        </div>
+        <!-- end of product list -->
 
       </div>
-      <!-- end of product list  -->
+      <!-- end of shop container  -->
 
-      <div class="condition-block mb-5">
-        <a href="/" class="color-green pr-3">Condition de vente</a>&nbsp;
-        <a href="/" class="color-light-black">Condition de Livraison</a>
-        <p class="color-light-black pt-4">
-          Idque suavitate at vix. Est no soleat aliquip temporibus. Id erat accusamus principes vis. Et nec latine
-          meliore antiopam, ne sed minimum epicurei accommodare. Vero molestie lobortis mei cu, nam movet saperet
-          tacimates te.
-        </p>
-      </div>
 
     </div>
     <!-- end main content -->
@@ -546,11 +799,11 @@
 
   <!-- custom js to open mobile menu -->
   <script type="text/javascript">
-    var _overlay         = $('.js-mobile__overlay');
-    var _openBtn         = $('.js-mobile__menu-trigger');
-    var _closeBtn        = $('.js-mobile__menu-closer');
-    var _mobileMenu      = $('.js-mobile__menu');
-    var _mainContainer   = $('.js-main__container');
+    var _overlay = $('.js-mobile__overlay');
+    var _openBtn = $('.js-mobile__menu-trigger');
+    var _closeBtn = $('.js-mobile__menu-closer');
+    var _mobileMenu = $('.js-mobile__menu');
+    var _mainContainer = $('.js-main__container');
     // close menu
     function closeMenu(e) {
       e.preventDefault();
@@ -568,7 +821,7 @@
     _overlay.click(closeMenu)
 
   </script>
-  
+
 </body>
 
 </html>

@@ -47,7 +47,8 @@
       PRODUCTS THEME 1
 ********************************/
 @media only screen and (max-width: 771px) {
-  .product__hero_bottom {
+  .product__hero_bottom,
+  .shop__hero_top {
     background-image: none;
   }
   .pv-34 {
