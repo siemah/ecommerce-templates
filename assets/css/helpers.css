@@ -153,6 +153,9 @@
 .relative {
   position: relative;
 }
+.height-100 {
+  height: 100%;
+}
 .width-100 {
   width: 100%;
 }
@@ -411,7 +414,7 @@ input {
     bottom: 1px;
     background-color: inherit;
     border-radius: 12px;
-    border: 1px Solid #ffffff;
+    border: 2px Solid #ffffff;
 }
 .radio-button__input:checked+.radio-button__control {
     border-color: #01a982;
