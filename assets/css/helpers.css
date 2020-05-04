@@ -57,6 +57,9 @@
 .bg-green {
   background-color: #8BC540;
 }
+.bg-green_hover:hover {
+  background-color: #8BC540;
+}
 .bg-light {
   background-color: #F7F7F7 !important;
 }
@@ -170,6 +173,9 @@
 }
 .relative {
   position: relative;
+}
+.height-224px {
+  height: 224px !important;
 }
 .height-100 {
   height: 100%;
@@ -397,7 +403,11 @@ td .quantity-container {
   background-image: url(../images/product-bottom-hero.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 100%;
+  /* background-size: 100%; */
+  height: 224px;
+}
+.bg-position-center {
+  background-position: center;
 }
 .radio-button {
   cursor: pointer;
@@ -522,4 +532,18 @@ input {
   border-width: 0;
   background-color: transparent;
   color: #8BC540;
+}
+
+/****************
+    Shops theme 3
+******************/
+body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu a.nav-link {
+  margin-right: 30px;
+}
+body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:last-child a.nav-link {
+  margin-right: 0px;
+}
+.shop-navbar_middle .nav-link:hover .nav-link__text,
+.shop-navbar_middle .nav-link:hover::after {
+  color: #ffffff !important;
 }

@@ -4,7 +4,8 @@
 @media only screen and (max-width: 991px) {
   .header-top,
   .search-block,
-  .header-navbar__bottom {
+  .header-navbar__bottom,
+  .shop-navbar_middle {
     visibility: hidden;
     display: none;
   }
@@ -13,6 +14,10 @@
   }
   .hero-image {
     height: 150px;
+  }
+  /* shops background position of hero image to avoid overflow of container block */
+  .bg-position-center {
+    background-position: left center;
   }
 }
 
@@ -54,5 +59,11 @@
   .pv-34 {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+  body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu a.nav-link {
+    margin-right: 10px !important;
+  }
+  body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:last-child a.nav-link {
+    margin-right: 0px !important;
   }
 }
