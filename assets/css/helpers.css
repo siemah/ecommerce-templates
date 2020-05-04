@@ -30,11 +30,26 @@
 .mb-30px {
   margin-bottom: 30px;
 }
+.mr-30px {
+  margin-right: 30px;
+}
+.pl-30px {
+  padding-left: 30px !important;
+}
+.p-20px {
+  padding: 20px !important;
+}
 .mb-40px {
   margin-bottom: 40px;
 }
 .p-14 {
   padding: 14px;
+}
+.pt-11px {
+  padding-top: 11px;
+}
+.pb-11px {
+  padding-bottom: 11px;
 }
 .bg-dark {
   background-color: #333333;
@@ -57,7 +72,9 @@
 .bg-green {
   background-color: #8BC540;
 }
-.bg-green_hover:hover {
+.bg-green_hover:hover,
+.bg-green_hover:focus,
+.bg-green_hover:active {
   background-color: #8BC540;
 }
 .bg-light {
@@ -75,6 +92,9 @@
 .color-green {
   color: #8BC540;
 }
+.color-green__input {
+  color: #8BC540 !important;
+}
 .color-green_hover:hover {
   color: #8BC540;
 }
@@ -89,6 +109,14 @@
 }
 .color-white:hover {
   color: #ffffff;
+}
+.color-white_hover:hover,
+.color-white_hover:hover::after,
+.color-white_hover:focus::after,
+.color-white_hover:hover span,
+.color-white_hover:focus span,
+.color-white_hover:active span {
+  color: #ffffff !important;
 }
 .color-black {
   color: #000000;
@@ -152,6 +180,9 @@
 }
 .fs-34 {
   font-size: 34px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fs-24 {
   font-size: 24px;
@@ -547,3 +578,30 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
 .shop-navbar_middle .nav-link:hover::after {
   color: #ffffff !important;
 }
+.shop-search {
+  height: 40px;
+  border-radius: 5px !important;
+}
+/****************
+    Shops theme 2
+******************/
+.navbar-green .nav-item a.nav-link:hover {
+  background-color: initial !important;
+}
+.navbar-green .nav-item a.nav-link:hover svg path {
+  fill: #ffffff;
+}
+.bg-position-right-10 {
+  background-position: 10%;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-cheer__left {
+  background-image: url(../images/cheer-left.png);
+  background-color: #F6E6D5;
+}
+.bg-position-right {
+  background-position: right;
+}
+
