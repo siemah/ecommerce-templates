@@ -410,12 +410,12 @@
                   <div class="d-flex justify-content-lg-start justify-content-center">
                     <div class="quantity-container input-group mb-3 mt-2 justify-content-between border-green radius-2 overflow-hidden">
                       <div class="input-group-prepend">
-                        <button class="input-group-text bg-transparent color-green no-border">-</button>
+                        <button class="input-group-text bg-transparent color-green no-border js-crtl__qty" data-operation="-">-</button>
                       </div>
                       <input type="text" class="form-control no-border color-green text-center" value="01"
                         aria-label="Quantite">
                       <div class="input-group-append">
-                        <button class="input-group-text bg-transparent color-green no-border">+</button>
+                        <button class="input-group-text bg-transparent color-green no-border js-crtl__qty" data-operation="+">+</button>
                       </div>
                     </div>
                   </div>
@@ -435,12 +435,12 @@
                   <div class="d-flex justify-content-lg-start justify-content-center">
                     <div class="quantity-container input-group mb-3 mt-2 justify-content-between border-green radius-2 overflow-hidden">
                       <div class="input-group-prepend">
-                        <button class="input-group-text bg-transparent color-green no-border">-</button>
+                        <button class="input-group-text bg-transparent color-green no-border js-crtl__qty" data-operation="-">-</button>
                       </div>
                       <input type="text" class="form-control no-border color-green text-center" value="01"
                         aria-label="Quantite">
                       <div class="input-group-append">
-                        <button class="input-group-text bg-transparent color-green no-border">+</button>
+                        <button class="input-group-text bg-transparent color-green no-border js-crtl__qty" data-operation="+">+</button>
                       </div>
                     </div>
                   </div>
@@ -565,8 +565,25 @@
       _mainContainer.addClass('translateX');
     });
     _closeBtn.click(closeMenu);
-    _overlay.click(closeMenu)
+    _overlay.click(closeMenu);
 
+    // control the quantity
+    var $btnsCtrl = $('.js-crtl__qty');
+    $btnsCtrl.click(function (e) {
+      e.preventDefault();
+      var _operation = this.dataset.operation;
+      var $parent    = $(this).parent();
+      var $qtyInput = _operation === "-" 
+        ? $parent.next('input') 
+        : $parent.prev('input');
+      
+      var _sum = parseInt($qtyInput.val(), 10);
+      _sum = _operation === '-' 
+        ? (_sum-1) 
+        : (_sum+1);
+
+      $qtyInput.val(_sum < 0 ? 0 : _sum);
+    });
   </script>
   
 </body>
