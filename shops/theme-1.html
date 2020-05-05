@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="../assets/css/helpers.css" />
   <link rel="stylesheet" href="../assets/css/media.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- slider ui css -->
+  <link rel="stylesheet" href="../assets/css/nouislider.min.css" />
+
   <title>Shops Theme 1</title>
 </head>
 
@@ -441,6 +444,14 @@
                   </select>
                 </div>
               </div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fs-14 color-black-2 mb-0">Tailles</h4>
+                <div class="d-block width-155px">
+                  <input type="hidden" name="min" class="js__input-min" />
+                  <input type="hidden" name="max" class="js__input-max" />
+                  <div id="js-nouislider"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="border-top-grey pt-4">
@@ -796,6 +807,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- slider ui js -->
+  <script src="../assets/js/nouislider.min.js"></script>
 
   <!-- custom js to open mobile menu -->
   <script type="text/javascript">
@@ -820,6 +833,27 @@
     _closeBtn.click(closeMenu);
     _overlay.click(closeMenu)
 
+    // slider controll
+    var $slider = document.getElementById('js-nouislider');
+    var $min = document.querySelector('.js__input-min');
+    var $max = document.querySelector('.js__input-max');
+    // create slider
+    noUiSlider.create($slider, {
+        start: [0, 8000],
+        connect: true,
+        tooltips: true,
+        step: 1,
+        range: {
+            'min': 10, //  price min value 
+            'max': 10000 // price max value 
+        }
+    });
+    // set the value of min and max input via slider
+    $slider.noUiSlider.on('update', function () {
+      var _values = $slider.noUiSlider.get();
+      $min.value = _values[0];
+      $max.value = _values[1];
+    });
   </script>
 
 </body>
