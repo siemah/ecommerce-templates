@@ -388,7 +388,7 @@
       <!-- end of breadcrumb menu -->
 
       <!-- shop container  -->
-      <div class="row shop__product-list">
+      <div class="row">
 
         <!-- hero card image -->
         <div class="col-sm-12 col-lg-6 mb-30px">
@@ -428,7 +428,8 @@
           </div>
           <div class="d-flex align-items-start align-items-xl-center flex-column flex-xl-row mb-2 mb-md-0 mr-3">
             <h3 class="fs-14 color-black-2 mr-3 text-capitalize">Filters</h3>
-            <div class="d-block border-green mb-2 mb-xl-0 max-width-110px min-width-110px mr-3 height-36 overflow-hidden">
+            <div
+              class="d-block border-green mb-2 mb-xl-0 max-width-110px min-width-110px mr-3 height-36 overflow-hidden">
               <select class="form-control no-border bg-white d-block color-green d-block width-100">
                 <option selected="">Colleurs</option>
                 <option>Green</option>
@@ -443,11 +444,14 @@
           </div>
           <div class="d-flex align-items-start align-items-xl-center flex-column flex-xl-row mb-2 mb-md-0 mr-3">
             <h3 class="fs-14 color-black-2 mr-3 text-capitalize">Prix</h3>
-            <div class="d-block border-green max-width-110px mb-2 mb-xl-0 min-width-110px height-36 overflow-hidden mr-3">
-              <input placeholder="Min" type="number" class="form-control no-border bg-white d-block d-block width-100 color-green__input" />
+            <div
+              class="d-block border-green max-width-110px mb-2 mb-xl-0 min-width-110px height-36 overflow-hidden mr-3">
+              <input placeholder="Min" type="number"
+                class="form-control no-border bg-white d-block d-block width-100 color-green__input" />
             </div>
             <div class="d-block border-green max-width-110px min-width-110px height-36 overflow-hidden">
-              <input placeholder="Max" type="number" class="form-control no-border bg-white d-block d-block width-100 color-green__input" />
+              <input placeholder="Max" type="number"
+                class="form-control no-border bg-white d-block d-block width-100 color-green__input" />
             </div>
           </div>
           <div class="d-flex align-items-start align-items-xl-center flex-column flex-xl-row">
@@ -463,409 +467,281 @@
         <!-- end of product list  -->
 
         <!-- product list -->
-        <div class="col-sm-12">
+        <div class="col-sm-12 shop__product-list">
           <!-- products cards list -->
           <div class="row mb-40px">
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+            <!-- end of product card item -->
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+            <!-- end of product card item -->
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+            <!-- end of product card item -->
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+            <!-- end of product card item -->
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
+            <!-- end of product card item -->
+            <!-- product card item -->
+            <div class="mb-30px col-sm-12 col-md-4 col-lg-3 overflow-hidden">
+              <div class="card card-product overflow-y-hidden no-border bg-lightwhite rounded-0">
+                <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
+                <div class="card-body p-0 bg-white">
+                  <div class="card-body__wrapper bg-white radius-0-5">
+                    <a href="/product" class="card__action btn bg-green color-white btn-block no-border rounded-0 pt-1 pb-1 mb-3 d-none">Button</a>
+                    <div class="pl-3 pr-3 pb-3 pt-0 ">
+                      <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Electronics</h5>
+                      <h5 class="card-title color-black-2 mb-3 text-truncate">Apple new Airpods</h5>
+                      <div class="card-text">
+                        <div class="d-flex justify-content-between mb-3">
+                          <div class="pricing-container d-flex flex-column">
+                            <span class="color-black-2">
+                              <sup>DA</sup>150 000, 00
+                            </span>
+                            <span class="color-darkgrey fs-12">
+                              <del><sup>DA</sup>150 000, 00</del>
+                            </span>
+                          </div>
+                          <div class="">
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
+                              <span class="radio-button__control"
+                                style="background-color: #59ADFF; border-color: #59ADFF;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #FC4850; border-color: #FC4850;"></span>
+                            </label>
+                            <label class="radio-button mb-0">
+                              <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
+                              <span class="radio-button__control"
+                                style="background-color: #E88BFF; border-color: #E88BFF;"></span>
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product-2.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-30px col-12 col-sm-6 col-md-4 col-lg-3 card card-product no-border radius-0-5 overflow-hidden">
-              <img class="card-img-top" src="../assets/images/product.png" alt="product name">
-              <div class="card-body p-0">
-                <div class="card-body__wrapper p-3 bg-white radius-0-5">
-                  <h5 class="fs-12 color-darkgrey mb-0 text-truncate">Display title</h5>
-                  <h5 class="card-title color-black-2 mb-3 text-truncate">Product title</h5>
-                  <div class="card-text">
-                    <div class="d-flex justify-content-between mb-3">
-                      <div class="pricing-container d-flex flex-column">
-                        <span class="color-black-2">
-                          <sup>DA</sup>150 000, 00
-                        </span>
-                        <span class="color-darkgrey fs-12">
-                          <del><sup>DA</sup>150 000, 00</del>
-                        </span>
-                      </div>
-                      <div class="">
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1" checked="">
-                          <span class="radio-button__control"
-                            style="background-color: #59ADFF; border-color: #59ADFF;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #FC4850; border-color: #FC4850;"></span>
-                        </label>
-                        <label class="radio-button mb-0">
-                          <input type="radio" class="radio-button__input" id="choice1-1" name="choice1">
-                          <span class="radio-button__control"
-                            style="background-color: #E88BFF; border-color: #E88BFF;"></span>
-                        </label>
-                      </div>
-                    </div>
-                    <a href="/product"
-                      class="btn bg-green color-white btn-block no-border radius-2 pt-1 pb-1">Button</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- end of product card item -->
+
           </div>
           <!-- end of products cards list -->
 
