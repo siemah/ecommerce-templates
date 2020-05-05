@@ -214,6 +214,9 @@
 .width-100 {
   width: 100%;
 }
+.width-155px {
+  width: 155px;
+}
 .max-width-110px {
   max-width: 110px !important;
 }
@@ -517,7 +520,7 @@ input {
 }
 
 /**********************************
-          SHOP THEME 1
+          SHOP THEME
 ***********************************/
 .shop__hero_top {
   background-image: url(../images/shop-top-hero.png);
@@ -564,7 +567,55 @@ input {
   background-color: transparent;
   color: #8BC540;
 }
-
+/* slide ui  */
+.noUi-target {
+  top: 0.5rem;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.noUi-connects::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #D3D3D3;
+}
+.noUi-connect {
+  background-color: #8BC540 !important;
+  height: 2px !important;
+}
+.noUi-horizontal .noUi-handle {
+  background-color: #8BC540;
+  height: 14px !important;
+  width: 14px !important;
+  border-radius: 14px;
+  box-shadow: none;
+  right: -10px !important;
+  background-color: #D3D3D3;
+  border-color: #8BC540 !important;
+}
+.noUi-horizontal .noUi-handle::before,
+.noUi-horizontal .noUi-handle::after {
+  display: none;
+}
+.noUi-tooltip {
+  color: #8BC540 !important;
+  border-width: 0 !important;
+  padding: 0 !important;
+  bottom: -25px !important;
+  font-size: 10px !important;
+}
+.noUi-tooltip::before {
+  content: 'DA';
+  color: inherit;
+  position: absolute;
+  font-size: inherit;
+  top: -5px;
+  left: -15px;
+}
 /****************
     Shops theme 3
 ******************/
@@ -605,3 +656,23 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   background-position: right;
 }
 
+/**************************
+    shops theme 4
+**************************/
+.card-block {
+  border-color: #EFEFEF;
+}
+.card__image {
+  max-width: 250px;
+  background-color: #F6F7F7;
+}
+.card .card__content {
+  max-height: 100%;
+}
+.card .card__p {
+  max-width: 80%;
+}
+.card .card__action {
+  max-width: 158px;
+  height: 32px;
+}

@@ -67,3 +67,17 @@
     margin-right: 0px !important;
   }
 }
+
+/********************************
+      Shops theme 4 card
+********************************/
+@media only screen and (max-width: 601px) {
+  .card__image {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 551px) {
+  .card__image {
+    min-width: 100%;
+  }
+}
