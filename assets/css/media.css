@@ -1,5 +1,5 @@
 /******************************************
-          MEDIA QUERY THEME 1
+          MEDIA QUERY FOR THEMES
 ******************************************/
 @media only screen and (max-width: 991px) {
   .header-top,
@@ -33,6 +33,15 @@
   }
   .map-extend-md-height {
     height: 200px !important;
+  }
+  /***********
+    HOME
+  ****************/
+  .carousel__subtitle {
+    font-size: 16px !important;
+  }
+  .carousel__title {
+    font-size: 30px !important;
   }
 }
 
@@ -79,5 +88,16 @@
 @media only screen and (max-width: 551px) {
   .card__image {
     min-width: 100%;
+  }
+  .owl-carousel .owl-item img {
+    width: auto !important;
+    max-height: 150px;
+  }
+  .card_position_half .card__link {
+    width: 100%;
+  }
+  .card_position_half {
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
