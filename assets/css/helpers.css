@@ -87,7 +87,7 @@
 .bg-lightgrey {
   background-color: rgba(211, 211, 211, .5) !important;
 }
-.bg-lightwhite {
+.bg-lightwhite-1 {
   background-color: rgba(255, 255, 255, .65) !important;
 }
 .bg-green {
@@ -865,4 +865,44 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
 .position_right_center {
   right: 23%;
   bottom: 60px;
+}
+/********************
+    HOME THEME 5
+********************/
+.carousel__center {
+  right: 50%;
+  transform: translateX(-50%);
+}
+.card.before::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  background-color: rgba(224, 224, 224, .5);
+  opacity: 0;
+  z-index: 0;
+}
+.discover__products .card.before:hover::before {
+  opacity: 1;
+}
+.card.before:hover .card_position_half {
+  background-color: transparent !important;
+}
+.tabs__list {
+  background-color: #D3D3D3;
+  padding: 20px;
+}
+.tabs__list .nav-link {
+  padding: 14px;
+  color: #6C6C6C;
+}
+.tabs__list .nav-link:last-child {
+  border: 1px solid #6C6C6C;
+}
+.tabs__list .tabs__nav .nav-link.active {
+  background-color: #ffffff;
+  color: #000000 !important;
+  text-transform: uppercase;
 }
