@@ -54,6 +54,9 @@
 .mb-40px {
   margin-bottom: 40px;
 }
+.mt-40px {
+  margin-top: 40px;
+}
 .p-14 {
   padding: 14px;
 }
@@ -83,6 +86,9 @@
 }
 .bg-lightgrey {
   background-color: rgba(211, 211, 211, .5) !important;
+}
+.bg-lightwhite {
+  background-color: rgba(255, 255, 255, .65) !important;
 }
 .bg-green {
   background-color: #8BC540;
@@ -770,6 +776,10 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   background-image: url(../images/cheer-skyblue.png);
   background-repeat: no-repeat;
 }
+.bg-image_skyblue_left {
+  background-image: url(../images/cheer-skyblue-left.png);
+  background-repeat: no-repeat;
+}
 .tabs__nav .nav-link.active {
   color: #8BC540 !important;
 }
@@ -840,6 +850,19 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
 .bg-cheer_left_thik {
   background-image: url(../images/left-cheer-thik.png);
 }
+.bg-cheer_right_thik {
+  background-image: url(../images/right-cheer-thik.png);
+}
 .mb-108px {
   margin-bottom: 108px;
+}
+.height-550px {
+  height: 550px;
+}
+.height-600px {
+  height: 600px;
+}
+.position_right_center {
+  right: 23%;
+  bottom: 60px;
 }

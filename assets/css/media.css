@@ -19,6 +19,17 @@
   .bg-position-center {
     background-position: left center;
   }
+  /* home theme 3 */
+  .carousel__container .height-600px,
+  .carousel__container .height-550px {
+    height: auto;
+  }
+
+  .carousel__container .position_right_center {
+    top: 0px;
+    right: 20px;
+    bottom: auto;
+  }
 }
 
 @media only screen and (max-width: 791px) {
@@ -34,9 +45,9 @@
   .map-extend-md-height {
     height: 200px !important;
   }
-  /***********
-    HOME
-  ****************/
+  /*********************************
+                HOME THEMES
+  **************************************/
   .carousel__subtitle {
     font-size: 16px !important;
   }
