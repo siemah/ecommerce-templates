@@ -33,6 +33,9 @@
 .mb-60px {
   margin-bottom: 60px;
 }
+.mt-60px {
+  margin-top: 60px;
+}
 .mb-30px {
   margin-bottom: 30px;
 }
@@ -776,6 +779,10 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   background-image: url(../images/cheer-skyblue.png);
   background-repeat: no-repeat;
 }
+.bg-cheer_skyblue_right_half{
+  background-image: url(../images/cheer-skyblue-right-half.png);
+  background-repeat: no-repeat;
+}
 .bg-image_skyblue_left {
   background-image: url(../images/cheer-skyblue-left.png);
   background-repeat: no-repeat;
@@ -843,15 +850,18 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
 .bg-long-cheer_right {
   background-image: url(../images/long-cheer-right.png);
   background-position: right 15%;
+  background-repeat: no-repeat;
 }
 .height-370px {
   height: 370px;
 }
 .bg-cheer_left_thik {
   background-image: url(../images/left-cheer-thik.png);
+  background-repeat: no-repeat;
 }
 .bg-cheer_right_thik {
   background-image: url(../images/right-cheer-thik.png);
+  background-repeat: no-repeat;
 }
 .mb-108px {
   margin-bottom: 108px;
