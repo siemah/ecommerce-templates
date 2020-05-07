@@ -122,8 +122,11 @@
 .color-green__input {
   color: #8BC540 !important;
 }
-.color-green_hover:hover {
-  color: #8BC540;
+.color-green_hover:hover,
+.color-green_hover:hover::after,
+.shop-navbar_middle .nav-link.color-green_hover:hover::after,
+.shop-navbar_middle .nav-link.color-green_hover:hover .nav-link__text {
+  color: #8BC540 !important;
 }
 .color-grey {
   color: #BCBCBC !important;
@@ -255,6 +258,9 @@
 }
 .max-width-110px {
   max-width: 110px !important;
+}
+.max-width-400px {
+  max-width: 400px !important;
 }
 .min-width-110px {
   min-width: 110px !important;
@@ -725,6 +731,9 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
 /*****************************
         Homes
 ******************************/
+.owl-carousel .owl-item img {
+  /* width: auto; */
+}
 .bg-skyblue {
   background-color: #D6F6F1;
 }
@@ -915,4 +924,64 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   background-color: #ffffff;
   color: #000000 !important;
   text-transform: uppercase;
+}
+/***************************
+        HOMES THEME 2
+***************************/
+.carousel__item_after::after,
+.carousel__item_half::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, .65);
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.card__bottom {
+  top: auto;
+  bottom: 42px;
+  background-origin: 30px;
+}
+.card:hover .card__bottom {
+  bottom: 42px;
+  top: 60%;
+}
+.card:hover .card__bottom.card-body__wrapper  * {
+  color: #000000 !important;
+}
+.card:hover .card__bottom.card-body__wrapper .card__link {
+  color: #ffffff !important;
+}
+.custom-pagination.pagination .page-item.active .page-link.color-black {
+  color: #000000 !important;
+}
+.bg_cheer_to-left-thik {
+  background-image: url(../images/cheer-to-left-thik.png);
+  background-repeat: no-repeat;
+}
+.height-360px {
+  height: 360px;
+}
+.carousel__item_half::after {
+  background-color: rgba(255, 255, 255, .42) !important;
+  top: 120px;
+  bottom: 120px;
+  left: 44%;
+  z-index: 1;
+}
+.carousel__right {
+  right: 20%;
+  bottom: 150px;
+}
+.z-index_2 {
+  z-index: 2;
+}
+.carousel__dots_right {
+  right: 20px;
+}
+.dots__bottom {
+  bottom: 0 !important;
+  top: auto !important;
 }
