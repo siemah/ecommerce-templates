@@ -1,0 +1,455 @@
+/******************************************
+              HELPERS RULES
+******************************************/
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.pv-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.pv-34 {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.ml-8 {
+  margin-left: 8px !important;
+}
+.mr-8 {
+  margin-right: 8px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.ml-14 {
+  padding-left: 14px;
+}
+.mr-14 {
+  margin-right: 14px;
+}
+.mr-60px {
+  margin-right: 60px;
+}
+.mb-60px {
+  margin-bottom: 60px;
+}
+.mt-60px {
+  margin-top: 60px;
+}
+.mb-30px {
+  margin-bottom: 30px;
+}
+.mt-30px {
+  margin-top: 30px;
+}
+.mt-30px {
+  margin-bottom: 30px;
+}
+.mr-30px {
+  margin-right: 30px;
+}
+.pl-30px {
+  padding-left: 30px !important;
+}
+.p-20px {
+  padding: 20px !important;
+}
+.mb-40px {
+  margin-bottom: 40px;
+}
+.mt-40px {
+  margin-top: 40px;
+}
+.p-14 {
+  padding: 14px;
+}
+.pt-11px {
+  padding-top: 11px;
+}
+.pb-11px {
+  padding-bottom: 11px;
+}
+.bg-dark {
+  background-color: #333333;
+}
+.bg-black-2 {
+  color: #595959 !important;;
+}
+.bg-light-blue {
+  background-color: #9EB7CD !important;
+}
+.bg-dark-blue {
+  background-color: #122C49;
+}
+.bg-grey {
+  background-color: #EBEBEB;
+}
+.bg-lightwhite {
+  background-color: #fafafa !important;
+}
+.bg-lightgrey {
+  background-color: rgba(211, 211, 211, .5) !important;
+}
+.bg-lightwhite-1 {
+  background-color: rgba(255, 255, 255, .65) !important;
+}
+.bg-green {
+  background-color: #8BC540;
+}
+.bg-green_hover:hover,
+.bg-green_hover:focus,
+.bg-green_hover:active {
+  background-color: #8BC540;
+}
+.bg-light {
+  background-color: #F7F7F7 !important;
+}
+.bg-white {
+  background-color: #ffffff !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.bg-orange {
+  background-color: #FFECD6;
+}
+.bg-orange-dark  {
+  background-color: #F6E6D5;
+}
+.color-green {
+  color: #8BC540;
+}
+.color-green__input {
+  color: #8BC540 !important;
+}
+.color-green_hover:hover,
+.color-green_hover:hover::after,
+.shop-navbar_middle .nav-link.color-green_hover:hover::after,
+.shop-navbar_middle .nav-link.color-green_hover:hover .nav-link__text {
+  color: #8BC540 !important;
+}
+.color-grey {
+  color: #BCBCBC !important;
+}
+.color-grey::before {
+  color: #BCBCBC !important;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-white:hover {
+  color: #ffffff;
+}
+.color-white_hover:hover,
+.color-white_hover:hover::after,
+.color-white_hover:focus::after,
+.color-white_hover:hover span,
+.color-white_hover:focus span,
+.color-white_hover:active span {
+  color: #ffffff !important;
+}
+.color-black {
+  color: #000000;
+}
+.color-black:hover {
+  color: #000000;
+}
+.color-light-black {
+  color: #686868 !important;
+}
+.color-darkgrey {
+  color: #838383 !important;
+}
+.color-black-2 {
+  color: #595959 !important;;
+}
+.width-auto {
+  width: auto !important;
+}
+.radius-0-5 {
+  border-radius: .5rem;
+}
+.radius-1 {
+  border-radius: 1rem;
+}
+.radius-2 {
+  border-radius: 2rem;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid rgba(211, 211, 211, .5) !important;
+}
+.border-bottom-black {
+  border-bottom: 1px solid #838383 !important;
+}
+.border-top-grey {
+  border-top: 1px solid rgba(211, 211, 211, .5) !important;
+}
+.border-green {
+  border: 1px solid #8BC540;
+}
+.no-border {
+  border: none !important;
+}
+.overflow-hiddem {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.no-underline:hover {
+  text-decoration: none !important;
+}
+.no-resize {
+  resize: none;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-11 {
+  font-size: 11px;
+}
+.relative {
+  position: relative;
+}
+.height-224px {
+  height: 224px !important;
+}
+.height-100 {
+  height: 100%;
+}
+.width-100 {
+  width: 100%;
+}
+.width-155px {
+  width: 155px;
+}
+.width-266px {
+  width: 266px;
+}
+.max-width-110px {
+  max-width: 110px !important;
+}
+.max-width-400px {
+  max-width: 400px !important;
+}
+.min-width-110px {
+  min-width: 110px !important;
+}
+.width-95px {
+  width: 95px;
+}
+.height-95px {
+  height: 95px;
+}
+.width-80px {
+  width: 80px;
+}
+.width-180px {
+  width: 180px;
+}
+.header-item__badge,
+.header-item__badge_text {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  font-size: 12px;
+  font-weight: 300;
+  /* left: 50%; */
+  /* transform: translateX(-60%); */
+  width: 15px;
+  height: 15px;
+  line-height: 70%;
+  text-transform: center;
+}
+.header-item__badge_text {
+  left: 12px;
+}
+/* add space between icons of panier and favoris */
+header > div.container > nav.container.navbar.navbar-expand-lg.navbar-light.pr-0.pl-0 > div > ul > li:nth-child(1) > a {
+  margin-right: 30px;
+}
+/******************************************
+              PANIER THEME 1
+******************************************/
+
+.header-link {
+  text-decoration: none !important; 
+}
+.dropdown-menu {
+  width: 100%;
+}
+.dropdown-toggle::after {
+  position: relative;
+  top: .25rem;
+}
+.navbar-brand.dropdown-toggle::after {
+  color: #ffffff;
+}
+
+.dropdown-item:hover,
+.header-navbar__bottom .nav-link:hover,
+.header-navbar__bottom .nav-link:hover  .nav-link__text {
+  background-color: #ffffff !important;
+  color: #8BC540 !important;
+}
+.dropdown-menu__image.show {
+  display: flex;
+}
+.header-search__block {
+  position: relative;
+}
+.header-search__icon {
+  position: absolute;
+  left: 15px;
+}
+.header-search__input {
+  padding-left: 50px;
+  min-width: 590px;
+  border-color: #b2b2b2;
+  color: #b2b2b2 !important;
+}
+.condition-block a {
+  font-style: 18px;
+}
+.condition-block a:first-child:hover {
+  color: #8BC540;;
+}
+.condition-block a:first-child {
+  text-decoration: underline;
+}
+.condition-block a:last-child {
+  text-decoration: none;
+}
+.icon svg {
+  height: 24px;
+  width: 24px;
+}
+.icon.icon_theme_black svg path {
+  fill: #000000;
+}
+.icon.icon_theme_grey svg path {
+  fill: #BCBCBC;
+}
+.icon.icon_theme_white svg path {
+  fill: #ffffff;
+}
+.translateX {
+  transform: translateX(180px);
+  transition: transform .3s;
+}
+/*********************************
+        MOBILE MENU
+**********************************/
+.mobile-menu__container,
+.mobile-menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 280px;
+  z-index: 2;
+  transform: translateX(-300px);
+  transition: transform .3s;
+  visibility: hidden;
+}
+.mobile-menu__overlay {
+  right: 0;
+  z-index: 1;
+  max-width: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(0px)
+}
+.mobile-menu__container.show {
+  transform: translateX(0px);
+  overflow: scroll;
+  visibility: visible;
+}
+.mobile-menu__container.show + .mobile-menu__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.accordion-item {
+  background-color: transparent;
+}
+.accordion__list-item {
+  list-style: none;
+}
+.accordion__list-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.accordion-item__toggler:hover,
+.accordion-item__toggler:focus,
+.accordion-item__toggler:active,
+.accordion__list-item a:hover {
+  color: #8BC540;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.product-image__navigation-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 35px;
+}
+/**************
+  shops theme 3
+***************/
+body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu a.nav-link {
+  margin-right: 30px;
+}
+body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:last-child a.nav-link {
+  margin-right: 0px;
+}
+.shop-navbar_middle .nav-link:hover .nav-link__text,
+.shop-navbar_middle .nav-link:hover::after {
+  color: #ffffff !important;
+}
+.shop-search {
+  height: 40px;
+  border-radius: 5px !important;
+}
+/****************
+    Shops theme 2
+******************/
+.navbar-green .nav-item a.nav-link:hover {
+  background-color: initial !important;
+}
+.navbar-green .nav-item a.nav-link:hover svg path {
+  fill: #ffffff;
+}

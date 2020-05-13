@@ -985,3 +985,11 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   bottom: 0 !important;
   top: auto !important;
 }
+.custom-btn {
+  height: 40px !important;
+  min-width: 170px !important;
+  max-width: 170px !important;
+  line-height: 2;
+  display: inline-block;
+  text-align: center;
+}
