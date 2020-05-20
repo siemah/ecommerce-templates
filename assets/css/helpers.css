@@ -128,6 +128,9 @@
 .shop-navbar_middle .nav-link.color-green_hover:hover .nav-link__text {
   color: #8BC540 !important;
 }
+.nav-link__text {
+  font-size: 14px;
+}
 .color-grey {
   color: #BCBCBC !important;
 }
@@ -323,6 +326,9 @@ header > div.container > nav.container.navbar.navbar-expand-lg.navbar-light.pr-0
 }
 .navbar-brand.dropdown-toggle::after {
   color: #ffffff;
+}
+.navbar-brand {
+  font-size: 14px;
 }
 
 .dropdown-item:hover,
@@ -992,4 +998,29 @@ body > main > header > div.container > nav > div > ul.navbar-nav.icons-menu li:l
   line-height: 2;
   display: inline-block;
   text-align: center;
+}
+
+/****************************
+    COMPTES
+***************************/
+.account-images {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+}
+.bg-lightwhite-2 {
+  background-color: rgba(243, 243, 243, .5);
+}
+.account-hero {
+  height: 100% !important;
+  margin-bottom: 177px !important;
+}
+@media only screen and (min-width: 991px) {
+  .account-block .offset-lg-3 {
+    margin-left: 22.5%;
+  }
+  .account-block .col-lg-6 {
+    flex: 0 0 56%;
+    max-width: 56%;
+  }
 }
