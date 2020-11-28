@@ -1,6 +1,12 @@
 /******************************************
-          MEDIA QUERY FOR THEMES
+          MEDIA QUERY FOR All THEMES
 ******************************************/
+/* responsive product card on home ui*/
+@media only screen and (max-width: 1192px) {
+  .fs-lg-14 {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .header-top,
   .search-block,
@@ -59,6 +65,15 @@
   }
   .carousel__title {
     font-size: 30px !important;
+  }
+  .bg-position-sm-center {
+    background-position-x: 70%;
+  }
+  .pricing-container span {
+    font-size: 12px !important;
+  }
+  .fs-md-14 {
+    font-size: 14px;
   }
 }
 
